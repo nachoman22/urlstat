@@ -12,15 +12,15 @@ class GetUrlThread(Thread):
         print(self.url, resp.getcode())
 
 def get_responses():
-    urls = ['https://google.com']
+    urls = ['https://google.com', "https://github.com"]
     start = time.time()
     threads = []
     for url in urls:
         t = GetUrlThread(url)
         threads.append(t)
         t.start()
-    for t in threads:
-        t.join()
-    print("Elapsed time: %s" % (time.time()-start))
+        for s in threads:
+            s.join()
+            print("Elapsed time: %s" % (time.time()-start))
 
 get_responses()
