@@ -1,2 +1,4 @@
 INFO:urllib3.poolmanager:Redirecting http://google.com -> http://www.google.com/
 INFO:urllib3.poolmanager:Redirecting http://github.com -> https://github.com/
+INFO:urllib3.poolmanager:Redirecting http://google.com -> http://www.google.com/
+INFO:urllib3.poolmanager:Redirecting http://github.com -> https://github.com/
